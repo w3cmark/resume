@@ -55,13 +55,14 @@ A:原因是因为图片加载但没显示出来时计算高度，通过高度比
 
 **JS**
 （待完善）
+
 **css3**
 
 1. 新增的属性 box-shadow、text-shadow、boder-image、background-clip等
 2. 动画属性 transform（变换）/transition（过度）/animation
     transform属性：旋转：rotate() / 倾斜：skew() / 缩放：scale() / translate()/matrix：矩阵，六个值
 3. 新的选择器 比如子串匹配的属性选择符、结构性伪类、目标伪类、状态伪类
-地方实得分
+
 **HTML5**
 
 1. meta声明
@@ -94,17 +95,29 @@ A:原因是因为图片加载但没显示出来时计算高度，通过高度比
 ###**display有多少个属性**
 
 ``list-item``	此元素会作为列表显示。
+
 ``run-in``	此元素会根据上下文作为块级元素或内联元素显示。
+
 ``table``	此元素会作为块级表格来显示（类似``table``），表格前后带有换行符。
+
 ``inline-table``	此元素会作为内联表格来显示（类似`` <table>``），表格前后没有换行符。
+
 ``table-row-group``	此元素会作为一个或多个行的分组来显示（类似 ``<tbody>``）。
+
 ``table-header-group``	此元素会作为一个或多个行的分组来显示（类似 ``<thead>``）。
+
 ``table-footer-group``	此元素会作为一个或多个行的分组来显示（类似 ``<tfoot>``）。
+
 ``table-row``	此元素会作为一个表格行显示（类似 <tr>）。
+
 ``table-column-group``	此元素会作为一个或多个列的分组来显示（类似 ``<colgroup>``）。
+
 ``table-column``	此元素会作为一个单元格列显示（类似 ``<col>``）
+
 ``table-cell``	此元素会作为一个表格单元格显示（类似 ``<td>`` 和 ``<th>``）
+
 ``table-caption``	此元素会作为一个表格标题显示（类似 ``<caption>``）
+
 ``inherit``	规定应该从父元素继承 ``display`` 属性的值。
 
 ###**inline-block兼容性**
