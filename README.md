@@ -1082,3 +1082,8 @@ jQuery的御用选择器，可独立使用
 6. Safari—————————6
 
 通常的优化网站加载速度的方法是采用多个域名增加浏 览器对同一网页的请求并发连接数。
+
+###**LocalStorage兼容**
+根据浏览器自动选择使用 localStorage、globalStorage 或者 userData 来实现本地存储功能
+
+https://github.com/marcuswestin/store.js/blob/master/store.js
