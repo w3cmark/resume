@@ -1109,3 +1109,6 @@ https://github.com/marcuswestin/store.js/blob/master/store.js
 
 ###**前端自动化工具的区别**
 比如百度的fix工具和grunt工具
+
+###**PNG8和PNG24有什么不同**
+PNG8不支持半透明、PNG24支持半透明
