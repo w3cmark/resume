@@ -703,13 +703,18 @@ live方法之所以能对后生成的元素也绑定相应的事件的原因归�
 由于只有在事件发生的时候，live方法才会去检测绑定事件的对象是否存在，所以live方法可以实现后来新增的元素也可实现事件的绑定。相比之下，bind会在事件在绑定阶段就会判断绑定事件的元素是否存在，而且只针对当前元素进行绑定，而不是绑定到父节点上。
 
 那么为什么还要使用bind方法呢？bind和live主要的不同如下：
+
 （1）bind方法可以绑定任何JavaScript的事件，而live方法在jQuery1.3的时候只支持click, dblclick, keydown, keypress,keyup,mousedown, mousemove, mouseout, mouseover, 和 mouseup.在jQuery 1.4.1中，甚至也支持 focus 和 blue事件了（映射到更合适，并且可以冒泡的focusin和focusout上）。另外，在jQuery 1.4.1中，也能支持hover（映射到"mouseenter mouseleave"）。
+
 （2）live() 并不完全支持通过DOM遍历的方法找到的元素。取而代之的是，应当总是在一个选择器后面直接使用 .live()方法。
+
 （3）当一个元素采用live方法进行事件的绑定的时候，如果想阻止事件的传递或冒泡，就要在函数中return false,仅仅调用stopPropagation()是无法实现阻止事件的传递或者冒泡的
+
 ###**mouseover和mouseenter的区别**
 
 + 不论鼠标指针穿过被选元素或其子元素，都会触发 mouseover 事件。对应mouseout
 + 只有在鼠标指针穿过被选元素时，才会触发 mouseenter 事件。对应mouseleave
+
 ###**JS获取鼠标坐标**
 （1）相对于屏幕
 ```
@@ -922,14 +927,18 @@ jQuery.fn.extend 对jQuery.fn的属性和方法进行了扩展
 
 **总结：**
 通过new jQuery.fn.init() 构建一个新的对象，拥有init构造器的prototype原型对象的方法
+
 通过改变prorotype指针的指向，让这个新的对象也指向了jQuery类的原型prototype
+
 所以这样构建出来的对象就继续了jQuery.fn原型定义的所有方法了
 
 ---
 
 ###**lazyloader**
 1、获取需要做按需加载的图片在页面的位置
+
 ``getClientRects``常用于获取鼠标的位置
+
 ``getBoundingClientRect``获取元素位置 
 
 2、预加载的位置为：上下一屏的图片
@@ -945,6 +954,7 @@ jQuery.fn.extend 对jQuery.fn的属性和方法进行了扩展
 
 ###**viewport 的参数和作用**
 viewport用来把渲染限制在屏幕的一部分
+
 参数：
 ```
 height = [pixel_value | device-height] //控制 viewport 的高度
@@ -1083,7 +1093,19 @@ jQuery的御用选择器，可独立使用
 
 通常的优化网站加载速度的方法是采用多个域名增加浏 览器对同一网页的请求并发连接数。
 
+静态资源多域名的另外一个原因是，通过不同的域名携带不同的cookie。
+
+
 ###**LocalStorage兼容**
 根据浏览器自动选择使用 localStorage、globalStorage 或者 userData 来实现本地存储功能
 
 https://github.com/marcuswestin/store.js/blob/master/store.js
+
+
+###**setTimeout的时间定义为0有什么用**
+
+
+###**如何无刷新图片上传并且兼容**
+
+###**前端自动化工具的区别**
+比如百度的fix工具和grunt工具
