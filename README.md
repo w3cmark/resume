@@ -844,21 +844,26 @@ ExtJS最大的优势在于它将Web应用程序的操作方式向传统桌面应
 如果你想作门户、如果你想作SNS、如果你想作大型电子商务和电子政务网站，你大概只有一个选择，那就是Yui，Yui抽象出了比其他框架更复杂的层次结构、把模块按照不同的层次划分，并定义层次之间模块依赖关系，这种设计使得Yui对万行级代码的管理游刃有余，这种重设计轻开发的思想是Yui的核心之一，此外，Yui不仅仅是JS框架，他是JS＋CSS＋规范的集合，必要的约束在团队协作项目中可以降低成本。其实Yui本身也是团队合作的产物。在扩展性方面，我觉得Yui是所有前端框架作的最好的，Ext就是选择基于Yui进行扩展。相对来讲，ProtoType和jQuery显然太小了。
 
 + Prototype
+
 优点：基本底层，易学易用，甚至是其他一些js特效开发包的底层，体积算是最小的了。
 
 缺点：如果说缺点，可能就是功能是他的弱项
 
 + jQuery
+
 有人说jQuery是被设计用来改变你写JavaScript的方法的。在这一方面jQuery的确作的很好，20行的Dom javascript语句在jQuery里只需要2－3行就可以完成，语言的简洁简直太吸引人了，尤其对于前端开发工程师这群多少有些代码洁癖的人来说，简直美妙绝伦，甚至忽视了其粗糙的面向对象的结构这一致命的缺点。当我们过多的沉浸在代码简洁的乐趣中无法自拔的时候，对更高级抽象的忽视往往阻挡住了我们的视野。因此，jQuery本身无法承担庞大的网站架构任务，也只能在中小网站中搞一搞动画特效而已。但这仍然无法阻止wd们对jQuery的偏爱，只要你有洁癖，那么你一定会喜欢jQuery的。
 
 + MooTools
+
 在面向对象的方面，MooTools的确作的不错，软件设计模式中的高内聚和低耦合在MooTools中有良好的体现。文档也很完整，但MooTools的占有率一直不高是一个很尴尬的现象，作底端太多余，无法和jQuery竞争，作高端又有点吃力，无法和Yui竞争，给人鸡肋的感觉，就这样。
 
 + fiddler工具
+
 它能记录所有客户端和服务器的http和https请求，允许你监视，设置断点，甚至修改输入输出数据
 原理：Fiddler 是以代理web服务器的形式工作的,它使用代理地址:127.0.0.1, 端口:8888. 当Fiddler会自动设置代理， 退出的时候它会自动注销代理，这样就不会影响别的程序。
 
 + BackboneJS
+
 Backbone 为复杂Javascript应用程序提供模型(models)、集合(collections)、视图(views)的结构。其中模型用于绑定键值数据和自定义事件；集合附有可枚举函数的丰富API； 视图可以声明事件处理函数，并通过RESRful JSON接口连接到应用程序。
 http://www.csser.com/tools/backbone/backbone.js.html
 
@@ -873,7 +878,9 @@ http://www.csser.com/tools/backbone/backbone.js.html
 自定义Directive，比jQuery插件还灵活，但是需要深入了解Directive的一些特性，简单的封装容易，复杂一点官方没有提供详细的介绍文档，我们可以通过阅读源代码来找到某些我们需要的东西，如：在directive使用 $parse
 ng模块化比较大胆的引入了Java的一些东西（依赖注入），能够很容易的写出可复用的代码，对于敏捷开发的团队来说非常有帮助，我们的项目从上线到目前，UI变化很大，在摸索中迭代产品，但是js的代码基本上很少改动
 补充：Angular支持单元测试和e2e-testing
+
 ``缺点``
+
 验证功能错误信息显示比较薄弱，需要写很多模板标签，没有JQuery Validate方便，所以我们自己封装了验证的错误信息提示，详细参考 why520crazy/w5c-validator-angular · GitHub
 ngView只能有一个，不能嵌套多个视图，虽然有 angular-ui/ui-router · GitHub 解决，但是貌似ui-router 对于URL的控制不是很灵活，必须是嵌套式的（也许我没有深入了解或者新版本有改进）
 对于特别复杂的应用场景，貌似性能有点问题，特别是在Windows下使用chrome浏览器，不知道是内存泄漏了还是什么其他问题，没有找到好的解决方案，奇怪的是在IE10下反而很快，对此还在观察中
@@ -883,9 +890,19 @@ ng提倡在控制器里面不要有操作DOM的代码，对于一些JQuery 插�
 Angular 太笨重了，没有让用户选择一个轻量级的版本，当然1.2.X后，Angular也在做一些更改，比如把route，animate等模块独立出去，让用户自己去选择
 
 + Seajs
+
 SeaJS是由支付宝前端高级技术专家王保平（玉伯）开发的一个遵循CMD规范的模块加载框架，可用来轻松愉悦地加载任意JavaScript模块和CSS模块。 SeaJS非常小巧，小巧在于其压缩后体积只有4KB，而且接口和方法也非常少。SeaJS有两个核心：模块的定义和模块的加载。SeaJS可以加载任意 JavaScript模块和CSS模块，能保证你在使用一个模块时，已将所依赖的其他模块载入脚本运行环境中。SeaJS可以让你享受写代码的乐趣，不用 去管那些加载的问题。毕竟现在网页的可维护性和性能问题一样严峻，体现在：文件太多，不利于维护，前端后端都一样；HTTP请求过多，当然这个可以通过合 并解决，但如果没有后端直接合并，那么人工成本会非常大。用SeaJS就能非常好地解决这些问题。SeaJS遵循CMD规范，因此可以很方便地书写模块。 目前已经有越来越多的人采用CMD规范来开发项目了。
 
 `官网`：http://seajs.org/docs/
+
++ CommonJS 
+
+CommonJS API定义很多普通应用程序（主要指非浏览器的应用）使用的API，从而填补了这个空白。它的终极目标是提供一个类似Python，Ruby和Java标准库。这样的话，开发者可以使用CommonJS API编写应用程序，然后这些应用可以运行在不同的JavaScript解释器和不同的主机环境中。在兼容CommonJS的系统中，你可以实用JavaScript程序开发：
+
+服务器端JavaScript应用程序
+命令行工具
+图形界面应用程序
+混合应用程序（如，Titanium或Adobe AIR）
 
 ---
 
@@ -1022,14 +1039,13 @@ document.cookie="userId=828; userName=hulk";
 
 ---
 
-###**Backbone**
 ###**Dir**
 ###**Express**
 ###**Fork**
 ###**Grunt**
 ###**Haslayout**
 ###**kissy**
-###**Localstorage**
+
 ###**Media query**
 ###**Npm**
 ###**Opacity**
@@ -1043,6 +1059,7 @@ document.cookie="userId=828; userName=hulk";
 ###**Xss**
 ###**Yslow**
 页面性能检测工具
+
 ###**Zepto**
 
 最新版本： 1.1.4
