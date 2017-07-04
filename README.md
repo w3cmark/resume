@@ -7,25 +7,25 @@ resume
 
 ---
 [toc]
-###**介绍一下你自己**
+### **介绍一下你自己**
 包括：最强的技能、最深入研究的知识领域、个性中最积极的部分、做过的最成功的事、主要的成就等
 对互联网比较感兴趣
 对前端技术
 
-###**最大的优缺点**
+### **最大的优缺点**
 从自己的优点说起，中间加一些小缺点，最后再把问题转回到优点上，突出优点的部分
 喜欢动手、思考、写总结、对工作难点比较执着；对自己的约束力还是不够
 
-###**说说你的家庭**
+### **说说你的家庭**
 希望听到的重点也在于家庭对求职者的积极影响。外企相信，和睦的家庭关系对一个人的成长有潜移默化的影响
 
-###**对行业、技术发展趋势的看法**
+### **对行业、技术发展趋势的看法**
 对所面试的公司预先了解很多，包括公司各个部门，发展情况
 
-###**就你申请的这个职位，你认为你还欠缺什么**
+### **就你申请的这个职位，你认为你还欠缺什么**
 对于这个职位和我的能力来说，我相信自己是可以胜任的，只是缺乏经验，这个问题我想我可以进入公司以后以最短的时间来解决，我的学习能力很强，我相信可以很快融入公司的企业文化，进入工作状态。
 
-###**你还有什么问题吗**
+### **你还有什么问题吗**
 贵公司对新入公司的员工有没有什么培训项目，我可以参加吗？或者说贵公司的晋升机制是什么样的？
 
 ## **面试流程**
@@ -109,8 +109,8 @@ A：导致抖动的原因是设置fixed的元素，加入了背景图片，解�
 
 《CSS权威指南》
 
-##**知识点**
-###**display有多少个属性**
+## **知识点**
+### **display有多少个属性**
 
 ``list-item``	此元素会作为列表显示。
 
@@ -138,7 +138,7 @@ A：导致抖动的原因是设置fixed的元素，加入了背景图片，解�
 
 ``inherit``	规定应该从父元素继承 ``display`` 属性的值。
 
-###**inline-block兼容性**
+### **inline-block兼容性**
 IE 7和Firefox 2及以前的版本是不支持``inline-block``，可以通过设置hasLayout（加上zoom: 1，触发layout）;Firefox 2可以用``display: -moz-inline-box``、``display: -moz-inline-stack``
 
 ### **CSS兼容问题**
@@ -246,7 +246,7 @@ Repaint(重绘)就是在一个元素的外观被改变，但没有改变布局(�
 Reflow(重排)就是DOM的变化影响到了元素的几何属性（宽和高），浏览器会重新计算元素的几何属性，会使渲染树中受到影响的部分失效，浏览器会验证DOM树上的所有其它结点的visibility属性，这也是Reflow低效的原因。如：改变窗囗大小、改变文字大小、内容的改变、浏览器窗口变化，style属性的改变等等。
 通过设置style属性改变结点样式的话，每设置一次都会导致一次reflow，所以最好通过设置class的方式；　有动画效果的元素，它的position属性应当设为fixed或absolute，这样不会影响其它元素的布局；如果功能需求上不能设置position为fixed或absolute，那么就权衡速度的平滑性。
 
-###**sass vs less**
+### **sass vs less**
 为什么Sass比LESS要好
 Sass有很多可用的方法和逻辑。例如：条件和循环语句。LESS也可以做到，但不是很高效且不直观。像LESS一样，Sass也内置了一些非常友好的函数，像颜色，数字，还有变量列表。
 Sass用户可以使用功能强大的Compass库。这些库LESS用户也可以用，但并不完全一样，因为这是由一个庞大的社区来共同维护的。Compass有非常强大的特性，像自动生成图片切片（CSS Sprites)，传统浏览器支持，还有对CSS3的跨浏览器支持等。
@@ -258,7 +258,7 @@ Sass用户可以使用功能强大的Compass库。这些库LESS用户也可以�
 对命令行的恐惧；
 切换到另一个工具所产生的不便和额外的时间消耗；
 
-###**Twitter Bootstrap**
+### **Twitter Bootstrap**
 
 Bootstrap是基于LESS的一套前端工具库，想以一个项目，整合Compass，Blueprint，h5bp的目标功能，成为web前端的一站式解决方案。
 
@@ -324,7 +324,7 @@ ev.target.appendChild(document.getElementById(data));
 <br />
 <img id="drag1" src="/i/w3school_banner.gif" draggable="true" ondragstart="drag(event)" />
 ```
-###**浏览器是怎样渲染一个页面**
+### **浏览器是怎样渲染一个页面**
 由从服务器接收到的 HTML 形成DOM（文档对象模型）。
 样式被加载和解析，形成 CSSOM（CSS 对象模型）。
 紧接着 DOM 和 CSSOM 创建了一个渲染树，这个渲染树是一些被渲染对象的集合（ Webkit 分别叫它们”renderer”和”render object”，而在Gecko 引擎中叫”frame”）。除了不可见的元素（比如 head 标签和一些有 display:none 属性的元素），渲染树映射了 DOM 的结构。在渲染树中，每一个文本字符串都被当做一个独立的 renderer。每个渲染对象都包含了与之对应的计算过样式的DOM 对象（或者一个文本块）。换句话说，渲染树描述了 DOM 的直观的表现形式。
@@ -346,7 +346,7 @@ DOM 操作（如元素增、删、改或者改变元素顺序）。
 浏览器窗口的操作（改变大小、滚动窗口）。
 激活伪类（如:hover状态）。
 
-###**加载和渲染过程**
+### **加载和渲染过程**
 页面加载和渲染的过程（涉及内核间的差异以及并发处理）
 从浏览器地址栏的请求链接开始，浏览器通过DNS解析查到域名映射的IP地址，成功之后浏览器端向此IP地址取得连接，成功连接之后，浏览器端将请 求头信息 通过HTTP协议向此IP地址所在服务器发起请求，服务器接受到请求之后等待处理，最后向浏览器端发回响应，此时在HTTP协议下，浏览器从服务器接收到 text/html类型的代码，浏览器开始显示此html，并获取其中内嵌资源地址，然后浏览器再发起请求来获取这些资源，并在浏览器的html中显示。
 
@@ -367,11 +367,11 @@ DOM 操作（如元素增、删、改或者改变元素顺序）。
 Firefox处理下载和渲染顺序大体相同，只是在细微之处有些差别，例如：iframe的渲染
 >样式文件和JS文件一样是下载完一个解析一个的
 
-###**运算符**
+### **运算符**
  i++和 ++i的区别，i++单独使用时候和++i一模一样，i++是等i这个表达式运算结束后再运算i+1，然后改变i的值,
 而++i是先运算i+1,然后改变i的值，然后再和外面的表达式结合，进行整体运算。
 
-###**字符串处理**
+### **字符串处理**
 toFixed(num)（ps：num为保留小数点后几位）
 Math.ceil(num) //返回大于等于其数值参数的最大整数
 Math.floor(num) //返回小于等于其数值参数的最大整数
@@ -393,7 +393,7 @@ toUpperCase 将整个字符串转成大写字母。
 
 字符串连接操作非常消耗资源,解决方法是用 Array 对象存储字符串，然后用 join() 方法（参数是空字符串）创建最后的字符串
 
-###**js里面的基础对象和基础数据类型**
+### **js里面的基础对象和基础数据类型**
 JS基础数据类型:number数字(NaN)、string字符串、boolean布尔值、null、undefined
 typeof 用来判断数据类型
 显示/强制类型转换（ Number()、parseInt()、parseFloat() ）
@@ -403,7 +403,7 @@ typeof 用来判断数据类型
 JS Array、JS Boolean、JS Date、JS Math、JS Number、JS String、JS RegExp、JS Functions、JS Events
 Browser 对象 Window、Navigator、Screen、History、Location
 
-###**DOM年份，DOM好处和坏处，怎么禁用DOM**
+### **DOM年份，DOM好处和坏处，怎么禁用DOM**
 Document Object Model (DOM)是HTML和XML文档的编程接口。
 DOM标准主要要为：微软DOM与W3C DOM，一般IE实现的是微软DOM，而其它浏览器则不同程度的实际了W3C DOM
 DOM Level Zero ,事实上从来不存在DOM 0版本，只是人们的戏称。只是在W3C DOM出现之前，不同浏览器（主要是IE与NN）实现的DOM相互排斥，1996年的浏览器大战所产生的DHTML就是所谓的DOM 0，它是脚本程序员的恶梦
@@ -414,11 +414,11 @@ DOM Level 3 引入了以统一的方式载入和保存文档的方法。DOM Core
 好处：js调用dom的属性和方法就可以编程控制网页中的各种元素
 坏处：DOM操作很耗性能
 
-###**BOM浏览器信息**
+### **BOM浏览器信息**
 BOM是Browser Object Model的缩写，简称浏览器对象模型
 window对象、History对象、Location 对象、Navigator对象
 
-###**http的几种状态**
+### **http的几种状态**
 
 主要的就是4种大情况：200+（Success）表示 响应成功的HTTP状态码；
 + 300+ (Redirction)表示需进行重定向的HTTP状态码；
@@ -445,7 +445,7 @@ window对象、History对象、Location 对象、Navigator对象
 + 200 标示没有任何问题发生
     如果我们把一个地址采用301跳转方式跳转的话，搜索引擎会把老地址的PageRank等信息带到新地址，同时在搜索引擎索引库中彻底废弃掉原先的老地址。
 
-###**canvas程序**
+### **canvas程序**
 ```
 canvas = document.querySelector('canvas');
 ctx = canvas.getContext('2d');
@@ -499,7 +499,7 @@ xmlRequest = new ActiveXObject("Microsoft.XMLHTTP"); //IE6,IE5
 
 4 － （完成）响应内容解析完成，可以在客户端调用了
 
-###**Ajax过程**
+### **Ajax过程**
 ```
 var xmlHttp;
 function createXMLHttpRequest(){
@@ -626,7 +626,7 @@ js模板引擎包括如下：
 
 官方参考：https://github.com/janl/mustache.js
 
-###**对象**
+### **对象**
 如何判断一个对象是方法
 
 
@@ -682,7 +682,9 @@ JavaScript所有事件的两个阶段：捕获和冒泡
 阻止事件的默认行为，例如click <a>后的跳转~
 + 在W3c中，使用preventDefault（）方法；
 + 在IE下设置window.event.returnValue = false;
-###**闭包**
+
+### **闭包**
+
 了解什么是闭包、如何使用闭包、闭包的原理、闭包的真正原理
 
 + 定义
@@ -696,7 +698,8 @@ JavaScript所有事件的两个阶段：捕获和冒泡
 
 闭包作用：一个是可以读取函数内部的变量，另一个就是让这些变量的值始终保持在内存中。
 
-###**事件绑定**
+### **事件绑定**
+
 **为什么用bind来进行事件绑定，live方法的实现原理**
 Jquery中绑定事件有三种方法：以click事件为例
 
@@ -725,12 +728,13 @@ live方法之所以能对后生成的元素也绑定相应的事件的原因归�
 
 （3）当一个元素采用live方法进行事件的绑定的时候，如果想阻止事件的传递或冒泡，就要在函数中return false,仅仅调用stopPropagation()是无法实现阻止事件的传递或者冒泡的
 
-###**mouseover和mouseenter的区别**
+### **mouseover和mouseenter的区别**
 
 + 不论鼠标指针穿过被选元素或其子元素，都会触发 mouseover 事件。对应mouseout
 + 只有在鼠标指针穿过被选元素时，才会触发 mouseenter 事件。对应mouseleave
 
-###**JS获取鼠标坐标**
+### **JS获取鼠标坐标**
+
 （1）相对于屏幕
 ```
 function getMousePos(event) {
@@ -760,12 +764,13 @@ function getMousePos(event) {
 //document.documentElement.scrollLeft for ie
 //document.body.scrollLeft for chrome
 ```
-###**ready方法的实现机制**
+### **ready方法的实现机制**
+
 ready方法是在dom加载完后就可以做相应的操作
 在jquery脚本加载的时候,会设置一个isReady的标记,监听DOMContentLoaded事件(这个不是什么浏览器都有的,不同浏览器,jquery运作方式不一样).当然遇到调用ready函数的时候,如果isReady未被设置,那就是说页面未加载完,就会把要执行的函数用一个数组缓存起来,当页面加载完后,再把缓存的函数一一执行
 [参考详细](http://blog.csdn.net/lk188/article/details/4359346)
 
-###**工具库**
+### **工具库**
 extJS、YUI、Prototype：这些工具库或框架都有各自的特点
 
 + extJS
@@ -906,7 +911,8 @@ CommonJS API定义很多普通应用程序（主要指非浏览器的应用）�
 
 ---
 
-###**jq源码分析**
+### **jq源码分析**
+
 最新版本：jquery 1.11.1(1.x) jquery2.1.1(2.x)
 
 >2.x版本不支持IE的6、7、8.性能上有所提高
@@ -966,7 +972,8 @@ jQuery.fn.extend 对jQuery.fn的属性和方法进行了扩展
 
 ---
 
-###**lazyloader**
+### **lazyloader**
+
 1、获取需要做按需加载的图片在页面的位置
 
 ``getClientRects``常用于获取鼠标的位置
@@ -978,13 +985,15 @@ jQuery.fn.extend 对jQuery.fn的属性和方法进行了扩展
 ---
 
 ### **Mask，Flexible Box**
+
 了解Mask，甚至能够知道Flexible Box的使用方法和原理
 
 ``Flexible Box`` 弹性布局
 
 ---
 
-###**viewport 的参数和作用**
+### **viewport 的参数和作用**
+
 viewport用来把渲染限制在屏幕的一部分
 
 参数：
@@ -1032,35 +1041,51 @@ target-densitydpi = [dpi_value | device-dpi | high-dpi | medium-dpi | low-dpi]
 
 ---
 
-###**cookie(值不能为中文，要经过编码处理)**
+### **cookie(值不能为中文，要经过编码处理)**
+
 大多数浏览器规定Cookie大小不超过4K，每个站点能保存的Cookie不超过20个，所有站点保存的Cookie总和不超过300个
 当没有指明cookie时间时，所创建的cookie有效期默认到用户浏览器关闭止，故被称为会话cookie
 document.cookie="userId=828; userName=hulk";
 
 ---
 
-###**Dir**
-###**Express**
-###**Fork**
-###**Grunt**
-###**Haslayout**
-###**kissy**
+### **Dir**
 
-###**Media query**
-###**Npm**
-###**Opacity**
-###**Querystring**
-###**Referer**
+### **Express**
 
-###**Trim**
-###**Underscore**
-###**Vim**
-###**Worker**
-###**Xss**
-###**Yslow**
+### **Fork**
+
+### **Grunt**
+
+### **Haslayout**
+
+### **kissy**
+
+### **Media query**
+
+### **Npm**
+
+### **Opacity**
+
+### **Querystring**
+
+### **Referer**
+
+### **Trim**
+
+### **Underscore**
+
+### **Vim**
+
+### **Worker**
+
+### **Xss**
+
+### **Yslow**
+
 页面性能检测工具
 
-###**Zepto**
+### **Zepto**
 
 最新版本： 1.1.4
 
@@ -1072,13 +1097,13 @@ jq的移动版本，去掉了老版本浏览器的兼容支持
 
 这个变量贯穿始终，也是zepto与jQuery很不一样的地方，jQuery是一个类，会创建一个个实例，而zepto本身就只是一个对象......
 
-###**Sizzler**
+### **Sizzler**
 
 官网：http://sizzlejs.com/
 
 jQuery的御用选择器，可独立使用
 
-###**网速性能优化的方法(雅虎35条优化建议)**
+### **网速性能优化的方法(雅虎35条优化建议)**
 
 规范代码，提高js的性能（正确理解 Repaint 和 Reflow、减少对DOM的操作），对js和css进行压缩处理；
 
@@ -1094,12 +1119,12 @@ jQuery的御用选择器，可独立使用
 
 动态删除节点，在浏览器内只保存两到三屏的节点，这样可以大大减轻浏览器压力
 
-###**描述一下渐进增强和优雅降级之间的不同**
+### **描述一下渐进增强和优雅降级之间的不同**
 两者区别的关键在于它们各自关注的焦点，以及这种关注对工作流程的影响。
 
 **优雅降级的视角**
 
-优雅降级关注于在最先进/最全能的浏览器上构建网站。在被认为“老的”或能力不足的浏览器中的测试，经常要等到开发周期的最后一个环节才进行，并且通常限制在主流浏览器（如IE、Mozzila等）的前一个发布版本中。
+优雅降级关注于在最先进/最全能的浏览器上构建网站。在被认为`老的`或能力不足的浏览器中的测试，经常要等到开发周期的最后一个环节才进行，并且通常限制在主流浏览器（如IE、Mozzila等）的前一个发布版本中。
 
 在这种模式下，老的浏览器只可能提供差强人意（poor, but passable）的体验。或许会做些小补丁来适应某个特定浏览器，但这些浏览器毕竟不是关注的焦点，除了修正重大的错误，也不会再费多大的神了。
 
@@ -1109,7 +1134,7 @@ jQuery的御用选择器，可独立使用
 
 内容是我们最初创建网站的原因。有些网站传播内容，有些收集内容，有些请求内容，有些操作内容，有些网站以上所有功能都有，然而而他们都需要内容。这就是渐进增加成为一种更适合的模式的关键所在。这也是Yahoo!迅速采纳这种模式并用它创建了分级浏览器支持（Graded Browser Support）策略的原因。
 
-###**览器并发请求数**
+### **览器并发请求数**
 
 1. IE6和IE7————————2
 
@@ -1128,24 +1153,24 @@ jQuery的御用选择器，可独立使用
 静态资源多域名的另外一个原因是，通过不同的域名携带不同的cookie。
 
 
-###**LocalStorage兼容**
+### **LocalStorage兼容**
 根据浏览器自动选择使用 localStorage、globalStorage 或者 userData 来实现本地存储功能
 
 https://github.com/marcuswestin/store.js/blob/master/store.js
 
 
-###**setTimeout的时间定义为0有什么用**
+### **setTimeout的时间定义为0有什么用**
 JavaScript 引擎是单线程处理任务的。它把任务放到队列中，不会同步去执行，必须在完成一个任务后才开始另外一个任务。
 
 由于setTimeout可以把任务从某个队列中跳脱成为新队列，因而能够得到期望的结果
 
-###**如何无刷新图片上传并且兼容**
+### **如何无刷新图片上传并且兼容**
 1、用iframe上传
 在页面动态创建 form 表单和 ifram ，设定 form 表单提交的目标为 ifram ，将文件域和要 post 的参数动态写入 form 表单中，然后提交 from 表单
 
 2、借助于flash，例如swfupload.js
 
-###**前端自动化工具的区别**
+### **前端自动化工具的区别**
 比如百度的fix工具和grunt工具
 
 Grunt 是一个基于 task 的构建工具，依赖众多的插件进行配置组织，可以解决基本的前端自动化问题。FIS 是基于工具、开发框架、本地开发环境为一体的前端解决方案，不但拥有各类工具插件，同时还针对 PC、Mobile、I18n 等业务、场景总结了很多最佳实践。
@@ -1162,5 +1187,6 @@ Grunt的缺点
 
 2、更加灵活的配置：强大到令人发指的部署配置（当然也让人晕晕的，glob、正则混搭的规则～）
 
-###**PNG8和PNG24有什么不同**
+### **PNG8和PNG24有什么不同**
+
 PNG8不支持半透明、PNG24支持半透明
