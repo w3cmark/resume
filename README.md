@@ -3,10 +3,7 @@ resume
 
 # 技能
 
-标签（空格分隔）： 积累
-
 ---
-[toc]
 ### **介绍一下你自己**
 包括：最强的技能、最深入研究的知识领域、个性中最积极的部分、做过的最成功的事、主要的成就等
 对互联网比较感兴趣
@@ -64,7 +61,7 @@ A：导致抖动的原因是设置fixed的元素，加入了背景图片，解�
 
 **css3**
 
-1. 新增的属性 box-shadow、text-shadow、boder-image、background-clip等
+1. 新增的属性 `box-shadow`、`text-shadow`、`boder-image`、`background-clip`等
 2. 动画属性 transform（变换）/transition（过度）/animation
     transform属性：旋转：rotate() / 倾斜：skew() / 缩放：scale() / translate()/matrix：矩阵，六个值
 3. 新的选择器 比如子串匹配的属性选择符、结构性伪类、目标伪类、状态伪类
@@ -81,6 +78,7 @@ A：导致抖动的原因是设置fixed的元素，加入了背景图片，解�
 + 最值得自豪的，可以拿出来和朋友分享的事情
 
 + 除了日常工作，还会做哪些事情来为团队贡献
+
 （1）分享项目中遇到的问题和解决方案（整理bug）
 
 （2）分享自己留意的前端的新技术和工具
@@ -110,6 +108,7 @@ A：导致抖动的原因是设置fixed的元素，加入了背景图片，解�
 《CSS权威指南》
 
 ## **知识点**
+
 ### **display有多少个属性**
 
 ``list-item``	此元素会作为列表显示。
@@ -139,10 +138,12 @@ A：导致抖动的原因是设置fixed的元素，加入了背景图片，解�
 ``inherit``	规定应该从父元素继承 ``display`` 属性的值。
 
 ### **inline-block兼容性**
+
 IE 7和Firefox 2及以前的版本是不支持``inline-block``，可以通过设置hasLayout（加上zoom: 1，触发layout）;Firefox 2可以用``display: -moz-inline-box``、``display: -moz-inline-stack``
 
 ### **CSS兼容问题**
-####属性hack
+
+#### 属性hack
 ```
 .sofish{
     padding:10px;
