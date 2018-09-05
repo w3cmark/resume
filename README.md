@@ -1,5 +1,10 @@
 resume
+
 ======
+
+# 小程序版
+
+![gh_f0e6801d6bcd_258](https://github.com/w3cmark/blog/resume/master/assets/gh_f0e6801d6bcd_258.jpg?raw=true)
 
 # 技能
 
